@@ -8,6 +8,9 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
+  slides: Array<any> = [];
+  slogan: Array<String> = [];
+
   ngOnInit() {
   }
 }
