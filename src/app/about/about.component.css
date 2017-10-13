@@ -1,0 +1,23 @@
+.about{
+  display: block;
+  margin: 10px 20px;
+}
+.content{
+  display: flex;
+  padding-left: 20px;
+  height: 100px;
+  line-height: 100px;
+}
+.icon{
+  flex: 1;
+  text-align: center;
+  height: 100px;
+}
+.icon img{
+  width: auto;
+  height: 100px;
+}
+.img_content{
+  flex: 4;
+  text-align: left;
+}

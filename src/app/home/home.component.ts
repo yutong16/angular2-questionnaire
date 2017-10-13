@@ -1,4 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+// declare var $: any;
 
 @Component({
   selector: 'sd-home',
@@ -6,7 +8,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   slides: Array<any> = [];
   slogan: Array<String> = [
     '免费简约的问卷系统',
@@ -18,6 +20,9 @@ export class HomeComponent {
     for (let i = 0; i < 3; i++) {
       this.addSlide(i);
     }
+  }
+
+  ngOnInit() {
   }
 
   addSlide(idx: number) {

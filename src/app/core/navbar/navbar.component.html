@@ -1,3 +1,10 @@
-<div >
-
+<div class="nav">
+  <ul class="nav nav-tabs nav-padd">
+    <li class="left" *ngFor="let list of navList_left;let index=index">
+      <a href="#">{{list}}</a>
+    </li>
+    <li class="right" *ngFor="let list of navList_right;let index=index">
+      <a href="#">{{list}}</a>
+    </li>
+  </ul>
 </div>
